@@ -1,12 +1,13 @@
 'use strict';
-let sumNumbers = 0;
-
-outerLoop:
-    for (let i = 1; i <= 20; i++) {
-        if (i % 2 === 0) {
-            continue outerLoop;
-        }
-        sumNumbers += i;
+function generateKey(length, characters) {
+    let key = '';
+    for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * characters.length);
+        key += characters[randomIndex];
     }
+    return key;
+}
 
-    console.log(`Суммв непарних чисел: ${sumNumbers}`);
+const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+const key = generateKey(16, characters);
+console.log(key);
