@@ -1,0 +1,12 @@
+.registration_form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 15px;
+}
+
+.message {
+    color: darkslateblue;
+    width: 250px;
+    margin-top: 30px;
+}
