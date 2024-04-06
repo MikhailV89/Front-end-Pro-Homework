@@ -1,0 +1,2 @@
+'use strict';
+Controller.init();
